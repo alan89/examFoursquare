@@ -23,7 +23,7 @@ class DetailViewController: UIViewController {
     
     var addressValue = ""
     var isFav = false
-    var currentVenue = Venue(name: "",latitude: 0.0,longitude: 0.0,formattedAddress: [""],distance: 0,categoryName: "",icon: "",checkinsCount: 0,usersCount: 0,tipCount: 0,id: "")
+//    var currentVenue = Venue(name: "",latitude: 0.0,longitude: 0.0,formattedAddress: [""],distance: 0,categoryName: "",icon: "",checkinsCount: 0,usersCount: 0,tipCount: 0,id: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()
