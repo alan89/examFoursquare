@@ -58,7 +58,7 @@ class VenuesTableViewController: UITableViewController, CLLocationManagerDelegat
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(venuesArray[indexPath.row].name!)
+//        print(venuesArray[indexPath.row].name!)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -69,7 +69,7 @@ class VenuesTableViewController: UITableViewController, CLLocationManagerDelegat
             let backItem = UIBarButtonItem()
             backItem.title = " "
             navigationItem.backBarButtonItem = backItem
-            nextScene.currentVenue = selectedVenue
+//            nextScene.currentVenue = selectedVenue
         }
         else if segue.identifier == "showFavs"{
             let backItem = UIBarButtonItem()
@@ -99,44 +99,16 @@ class VenuesTableViewController: UITableViewController, CLLocationManagerDelegat
     
     func extractJson(_ data: Any){
         if let dictionary = data as? [String:Any]{
-            if let response = dictionary["response"] as? [String:Any]{
-                if let venues = response["venues"] as? [Any]{
-                    for i in 0..<venues.count {
-                        if let venueObj = venues[i] as? [String:Any]{
-                            if let nameVenue = venueObj["name"] as? String{
-                                let idVenue = venueObj["id"]
-                                if let locationVenue = venueObj["location"] as? [String: Any]{
-                                    let latitude = locationVenue["lat"] as? Double
-                                    let longitude = locationVenue["lng"] as? Double
-                                    let distance = locationVenue["distance"] as? Int
-                                    let formattedAddress = locationVenue["formattedAddress"]
-                                    if let statsVenue = venueObj["stats"] as? [String: Int]{
-                                        let checkinsCount = statsVenue["checkinsCount"]
-                                        let usersCount = statsVenue["usersCount"]
-                                        let tipCount = statsVenue["tipCount"]
-                                        if let categoryInfo = venueObj["categories"] as? [Any]{
-                                            let categoryObj = categoryInfo[0] as? [String: Any]
-                                            if let categoryName = categoryObj?["name"] as? String{
-                                                if let categoryIcon = categoryObj?["icon"] as? [String: String]{
-                                                    let iconUrl = categoryIcon["prefix"]! + "64" + categoryIcon["suffix"]!
-                                                    let currentVenue = Venue(name: nameVenue, latitude: latitude!, longitude: longitude!, formattedAddress: formattedAddress as! [String], distance: distance!, categoryName: categoryName, icon: iconUrl, checkinsCount: checkinsCount!, usersCount: usersCount!, tipCount: tipCount!, id: idVenue as! String)
-                                                    venuesArray.append(currentVenue!)
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
+            if let response = dictionary["response"] as? [String:Any],
+                let venuesRaw = response["venues"] as? [[String:Any]]{
+                for venueRaw in venuesArray{
+                    if let venue = Venue.venueFrom(venueRaw){
+                        venuesArray.append(venue)
                     }
                 }
             }
         }
-
         DispatchQueue.main.async(execute: {self.doTableRefresh()})
-        for j in  0..<venuesArray.count{
-            print(venuesArray[j].name!)
-        }
     }
     
     func doTableRefresh(){

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E1C0A761E348FD90067AC92 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1C0A751E348FD90067AC92 /* CoreLocation.framework */; };
-		0E1C0A781E34AAAA0067AC92 /* venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C0A771E34AAAA0067AC92 /* venue.swift */; };
+		0E1C0A781E34AAAA0067AC92 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C0A771E34AAAA0067AC92 /* Venue.swift */; };
 		0E1C0A7A1E354F600067AC92 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C0A791E354F600067AC92 /* DetailViewController.swift */; };
 		0E2AC65A1E35C97200853C0B /* FavVenuesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2AC6591E35C97200853C0B /* FavVenuesTableViewController.swift */; };
 		0EEFA71D1E2E017B00A38022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFA71C1E2E017B00A38022 /* AppDelegate.swift */; };
@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		0E1C0A751E348FD90067AC92 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		0E1C0A771E34AAAA0067AC92 /* venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = venue.swift; sourceTree = "<group>"; };
+		0E1C0A771E34AAAA0067AC92 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		0E1C0A791E354F600067AC92 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0E2AC6591E35C97200853C0B /* FavVenuesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavVenuesTableViewController.swift; sourceTree = "<group>"; };
 		0EEFA7191E2E017B00A38022 /* IronbitExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IronbitExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,7 +88,7 @@
 				0EEFA72B1E2E017B00A38022 /* Info.plist */,
 				0EEFA7231E2E017B00A38022 /* IronbitExam.xcdatamodeld */,
 				0EEFA7331E2E0DB700A38022 /* VenuesTableViewController.swift */,
-				0E1C0A771E34AAAA0067AC92 /* venue.swift */,
+				0E1C0A771E34AAAA0067AC92 /* Venue.swift */,
 				0E1C0A791E354F600067AC92 /* DetailViewController.swift */,
 				0E2AC6591E35C97200853C0B /* FavVenuesTableViewController.swift */,
 			);
@@ -228,7 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EEFA7251E2E017B00A38022 /* IronbitExam.xcdatamodeld in Sources */,
-				0E1C0A781E34AAAA0067AC92 /* venue.swift in Sources */,
+				0E1C0A781E34AAAA0067AC92 /* Venue.swift in Sources */,
 				0EEFA7341E2E0DB700A38022 /* VenuesTableViewController.swift in Sources */,
 				0E2AC65A1E35C97200853C0B /* FavVenuesTableViewController.swift in Sources */,
 				0E1C0A7A1E354F600067AC92 /* DetailViewController.swift in Sources */,
