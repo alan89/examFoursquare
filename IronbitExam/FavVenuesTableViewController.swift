@@ -48,7 +48,7 @@ class FavVenuesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(venuesFavArray[indexPath.row].name!)
+        print(venuesFavArray[indexPath.row].name)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -77,7 +77,7 @@ class FavVenuesTableViewController: UITableViewController {
             for ev in results{
                 print(ev.value(forKeyPath: "name")!)
                 let text = ev.value(forKeyPath: "formattedAddress")! as! String
-                let currentVenue = Venue(name: ev.value(forKeyPath: "name")! as! String, latitude: ev.value(forKeyPath: "latitude")! as! Double, longitude: ev.value(forKeyPath: "longitude")! as! Double, formattedAddress: [text], distance: 0, categoryName: ev.value(forKeyPath: "categoryName")! as! String, icon: ev.value(forKeyPath: "icon") as! String, checkinsCount: ev.value(forKeyPath: "checkinsCount")! as! Int, usersCount: ev.value(forKeyPath: "usersCount")! as! Int, tipCount: ev.value(forKeyPath: "tipsCount")! as! Int, id: ev.value(forKeyPath: "id")! as! String)
+                let currentVenue = Venue.venueRaw(ev.value(forKeyPath: "id")! as! String, name: ev.value(forKeyPath: "name")! as! String, latitude: ev.value(forKeyPath: "latitude")!  as! Double, longitude: ev.value(forKeyPath: "longitude")! as! Double, address: text, categoryName: ev.value(forKeyPath: "categoryName")! as! String, categoryUrl: ev.value(forKeyPath: "icon") as! String, checkIns: ev.value(forKeyPath: "checkinsCount")! as! Int, usersCount: ev.value(forKeyPath: "usersCount")! as! Int, tipsCount: ev.value(forKeyPath: "tipsCount")! as! Int, distance: 0)
                 venuesFavArray.append(currentVenue!)
             }
             DispatchQueue.main.async(execute: {self.doTableRefresh()})
