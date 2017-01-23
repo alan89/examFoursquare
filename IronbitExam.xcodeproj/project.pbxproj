@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1C0A761E348FD90067AC92 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1C0A751E348FD90067AC92 /* CoreLocation.framework */; };
+		0E1C0A781E34AAAA0067AC92 /* venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C0A771E34AAAA0067AC92 /* venue.swift */; };
+		0E1C0A7A1E354F600067AC92 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1C0A791E354F600067AC92 /* DetailViewController.swift */; };
+		0E2AC65A1E35C97200853C0B /* FavVenuesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2AC6591E35C97200853C0B /* FavVenuesTableViewController.swift */; };
 		0EEFA71D1E2E017B00A38022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFA71C1E2E017B00A38022 /* AppDelegate.swift */; };
-		0EEFA71F1E2E017B00A38022 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFA71E1E2E017B00A38022 /* ViewController.swift */; };
 		0EEFA7221E2E017B00A38022 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EEFA7201E2E017B00A38022 /* Main.storyboard */; };
 		0EEFA7251E2E017B00A38022 /* IronbitExam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFA7231E2E017B00A38022 /* IronbitExam.xcdatamodeld */; };
 		0EEFA7271E2E017B00A38022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EEFA7261E2E017B00A38022 /* Assets.xcassets */; };
 		0EEFA72A1E2E017B00A38022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EEFA7281E2E017B00A38022 /* LaunchScreen.storyboard */; };
+		0EEFA7341E2E0DB700A38022 /* VenuesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFA7331E2E0DB700A38022 /* VenuesTableViewController.swift */; };
+		45876E2A701C3E3FC24B353E /* Pods_IronbitExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB55DD63F379F38EF092F19D /* Pods_IronbitExam.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E1C0A751E348FD90067AC92 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0E1C0A771E34AAAA0067AC92 /* venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = venue.swift; sourceTree = "<group>"; };
+		0E1C0A791E354F600067AC92 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0E2AC6591E35C97200853C0B /* FavVenuesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavVenuesTableViewController.swift; sourceTree = "<group>"; };
 		0EEFA7191E2E017B00A38022 /* IronbitExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IronbitExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EEFA71C1E2E017B00A38022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0EEFA71E1E2E017B00A38022 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0EEFA7211E2E017B00A38022 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EEFA7241E2E017B00A38022 /* IronbitExam.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IronbitExam.xcdatamodel; sourceTree = "<group>"; };
 		0EEFA7261E2E017B00A38022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EEFA7291E2E017B00A38022 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EEFA72B1E2E017B00A38022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EEFA7331E2E0DB700A38022 /* VenuesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesTableViewController.swift; sourceTree = "<group>"; };
+		3039DD0960FB0A287589AC31 /* Pods-IronbitExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronbitExam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IronbitExam/Pods-IronbitExam.debug.xcconfig"; sourceTree = "<group>"; };
+		8A7288D760F1CAE1FEB86926 /* Pods-IronbitExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronbitExam.release.xcconfig"; path = "Pods/Target Support Files/Pods-IronbitExam/Pods-IronbitExam.release.xcconfig"; sourceTree = "<group>"; };
+		EB55DD63F379F38EF092F19D /* Pods_IronbitExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IronbitExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E1C0A761E348FD90067AC92 /* CoreLocation.framework in Frameworks */,
+				45876E2A701C3E3FC24B353E /* Pods_IronbitExam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06CAA1BA3FB437B437F8398A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3039DD0960FB0A287589AC31 /* Pods-IronbitExam.debug.xcconfig */,
+				8A7288D760F1CAE1FEB86926 /* Pods-IronbitExam.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		0EEFA7101E2E017B00A38022 = {
 			isa = PBXGroup;
 			children = (
 				0EEFA71B1E2E017B00A38022 /* IronbitExam */,
 				0EEFA71A1E2E017B00A38022 /* Products */,
+				06CAA1BA3FB437B437F8398A /* Pods */,
+				8E4CBC36C6DAC2F18EAC3025 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +82,26 @@
 			isa = PBXGroup;
 			children = (
 				0EEFA71C1E2E017B00A38022 /* AppDelegate.swift */,
-				0EEFA71E1E2E017B00A38022 /* ViewController.swift */,
 				0EEFA7201E2E017B00A38022 /* Main.storyboard */,
 				0EEFA7261E2E017B00A38022 /* Assets.xcassets */,
 				0EEFA7281E2E017B00A38022 /* LaunchScreen.storyboard */,
 				0EEFA72B1E2E017B00A38022 /* Info.plist */,
 				0EEFA7231E2E017B00A38022 /* IronbitExam.xcdatamodeld */,
+				0EEFA7331E2E0DB700A38022 /* VenuesTableViewController.swift */,
+				0E1C0A771E34AAAA0067AC92 /* venue.swift */,
+				0E1C0A791E354F600067AC92 /* DetailViewController.swift */,
+				0E2AC6591E35C97200853C0B /* FavVenuesTableViewController.swift */,
 			);
 			path = IronbitExam;
+			sourceTree = "<group>";
+		};
+		8E4CBC36C6DAC2F18EAC3025 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E1C0A751E348FD90067AC92 /* CoreLocation.framework */,
+				EB55DD63F379F38EF092F19D /* Pods_IronbitExam.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +111,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EEFA72E1E2E017B00A38022 /* Build configuration list for PBXNativeTarget "IronbitExam" */;
 			buildPhases = (
+				4E1C25554D19EED79D01AFAF /* [CP] Check Pods Manifest.lock */,
 				0EEFA7151E2E017B00A38022 /* Sources */,
 				0EEFA7161E2E017B00A38022 /* Frameworks */,
 				0EEFA7171E2E017B00A38022 /* Resources */,
+				0A82E6DC7A61C76F5A3CD8BC /* [CP] Embed Pods Frameworks */,
+				CDAA7896C018DFAC464F50DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,7 +139,6 @@
 				TargetAttributes = {
 					0EEFA7181E2E017B00A38022 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 2NQYZ3NCEL;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -135,13 +174,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A82E6DC7A61C76F5A3CD8BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IronbitExam/Pods-IronbitExam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E1C25554D19EED79D01AFAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CDAA7896C018DFAC464F50DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IronbitExam/Pods-IronbitExam-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0EEFA7151E2E017B00A38022 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EEFA71F1E2E017B00A38022 /* ViewController.swift in Sources */,
 				0EEFA7251E2E017B00A38022 /* IronbitExam.xcdatamodeld in Sources */,
+				0E1C0A781E34AAAA0067AC92 /* venue.swift in Sources */,
+				0EEFA7341E2E0DB700A38022 /* VenuesTableViewController.swift in Sources */,
+				0E2AC65A1E35C97200853C0B /* FavVenuesTableViewController.swift in Sources */,
+				0E1C0A7A1E354F600067AC92 /* DetailViewController.swift in Sources */,
 				0EEFA71D1E2E017B00A38022 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,9 +351,10 @@
 		};
 		0EEFA72F1E2E017B00A38022 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3039DD0960FB0A287589AC31 /* Pods-IronbitExam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2NQYZ3NCEL;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = IronbitExam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.escobar.IronbitExam;
@@ -274,9 +365,10 @@
 		};
 		0EEFA7301E2E017B00A38022 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A7288D760F1CAE1FEB86926 /* Pods-IronbitExam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2NQYZ3NCEL;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = IronbitExam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.escobar.IronbitExam;
@@ -304,6 +396,7 @@
 				0EEFA7301E2E017B00A38022 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

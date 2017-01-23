@@ -1,0 +1,6 @@
+framework module Pods_IronbitExam {
+  umbrella header "Pods-IronbitExam-umbrella.h"
+
+  export *
+  module * { export * }
+}
