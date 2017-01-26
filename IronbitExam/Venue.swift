@@ -37,28 +37,35 @@ class Venue:NSObject{
             let addressArray =  locationDic["formattedAddress"] as? [String],
             let categories = dic["categories"] as? [[String:Any]]{
             print(categories)
-            if let category = Category.categoryFrom(dic: categories[0]){
+            if let stats = dic["stats"] as? [String:Int]{
                 var checkins:Int = 0
                 var users:Int = 0
                 var tips:Int = 0
-                
                 var address = ""
+                
+                if let statsTips = stats["tipCount"] {
+                    tips = statsTips
+                }
+                if let statsUsers = stats["usersCount"] {
+                    users = statsUsers
+                }
+                if let statsCheckIns = stats["checkinsCount"] {
+                    checkins = statsCheckIns
+                }
+                
                 for element in addressArray{
                     address += element+"\n"
                 }
                 let venueLocation = CLLocationCoordinate2D(latitude: lat, longitude: long)
-                if let stats = dic["stats"] as? [String:Int]{
-                    if let statsTips = stats["tipCount"] {
-                        tips = statsTips
-                    }
-                    if let statsUsers = stats["usersCount"] {
-                        users = statsUsers
-                    }
-                    if let statsCheckIns = stats["checkinsCount"] {
-                        checkins = statsCheckIns
+                if categories.count > 0{
+                    if let category = Category.categoryFrom(dic: categories[0]){
+                        return Venue(id:id,name:name, location:venueLocation,address:address, category:category,checkIns:checkins,usersCount:users,tipsCount:tips, distance: distance)
                     }
                 }
-                return Venue(id:id,name:name, location:venueLocation,address:address, category:category,checkIns:checkins,usersCount:users,tipsCount:tips, distance: distance)
+                else{
+                    let categorySup = Category.categoryRaw(name: "Sin Categoría", url: "")
+                    return Venue(id:id,name:name, location:venueLocation,address:address, category:categorySup!,checkIns:checkins,usersCount:users,tipsCount:tips, distance: distance)
+                }
             }
         }
         return nil

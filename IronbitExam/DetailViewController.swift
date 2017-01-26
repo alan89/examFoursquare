@@ -59,18 +59,22 @@ class DetailViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        let imageUrl:URL = URL(string: (currentVenue?.category.icon)!)!
+        
         let imageSelected = isFav ? #imageLiteral(resourceName: "fav_on") : #imageLiteral(resourceName: "fav_off")
         let rightButtonItem = UIBarButtonItem.init(image: imageSelected, style: .plain, target: self, action: #selector(setFav))
         self.navigationItem.rightBarButtonItem = rightButtonItem
-        DispatchQueue.global(qos: .userInitiated).async {
-            if let imageData:NSData = NSData(contentsOf: imageUrl){
-                // When from background thread, UI needs to be updated on main_queue
-                DispatchQueue.main.async {
-                    let image = UIImage(data: imageData as Data)
-                    self.icon.image = image
-                    self.icon.tintColor = UIColor.blue
-                    self.icon.contentMode = UIViewContentMode.scaleAspectFit
+        
+        if (currentVenue?.category.icon! != "") {
+            let imageUrl:URL = URL(string: (self.currentVenue?.category.icon)!)!
+            DispatchQueue.global(qos: .userInitiated).async {
+                if let imageData:NSData = NSData(contentsOf: imageUrl){
+                    // When from background thread, UI needs to be updated on main_queue
+                    DispatchQueue.main.async {
+                        let image = UIImage(data: imageData as Data)
+                        self.icon.image = image
+                        self.icon.tintColor = UIColor.blue
+                        self.icon.contentMode = UIViewContentMode.scaleAspectFit
+                    }
                 }
             }
         }
